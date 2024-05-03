@@ -2,11 +2,14 @@ def test():
     a = 12
     b = 25
     print(a, b)
-def test2():
-    c = 15
-    d = 27
-    e = 34
-    print(c, d, e)
+
+
+def test2(c, d, e):
+    c = 26
+    d = 17
+    e = 38
+    print(c,d,e)
+
 
 test()
-test2()
+test2(26, 17, 38)
