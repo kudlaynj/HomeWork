@@ -1,15 +1,15 @@
-def test():
-    a = 12
-    b = 25
-    print(a, b)
+def test(*params):
+    print(params)
+
+test(11, 22, 33, 44, 55)
 
 
-def test2(c, d, e):
-    c = 26
-    d = 17
-    e = 38
-    print(c,d,e)
+def test_2(n, *args, txt="Сумма"):
+    s = 0
+    for i in range(len(args)):
+        s += args[i] ** n
+        print(txt + ":", s)
 
 
-test()
-test2(26, 17, 38)
+test_2(4, 2,4,6,8)
+
