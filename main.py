@@ -1,15 +1,16 @@
-def test(*params):
-    print(params)
-
-test(11, 22, 33, 44, 55)
-
-
-def test_2(n, *args, txt="Сумма"):
-    s = 0
-    for i in range(len(args)):
-        s += args[i] ** n
-        print(txt + ":", s)
+def test():
+    a = 12
+    b = 25
+    print(a, b)
 
 
-test_2(4, 2,4,6,8)
+def test2(n):
+    if n == 0:
+        return 0
+    else:
+        return n + test2(n - 1)
 
+
+test()
+
+print(test2(7))
