@@ -3,7 +3,7 @@ class Car:
     hp = 152
 
     def horse_powers(self):
-        print('Количество лошадиных сил = ', self.hp, 'Стоимость', self.price)
+        return self.hp
 
 
 class Nissan(Car):
@@ -11,7 +11,7 @@ class Nissan(Car):
     hp = 124
 
     def horse_powers(self):
-        print('Количество лошадиных сил = ', self.hp, 'Стоимость',  self.price)
+        return self.hp
 
 
 class Kia(Car):
@@ -19,7 +19,7 @@ class Kia(Car):
     hp = 174
 
     def horse_powers(self):
-        print('Количество лошадиных сил = ', self.hp, 'Стоимость', self.price)
+        return self.hp
 
 
 print("Автомобиль")
@@ -33,5 +33,3 @@ car_2.horse_powers()
 print("Kia")
 car_3 = Kia()
 car_3.horse_powers()
-
-
