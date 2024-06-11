@@ -1,7 +1,5 @@
-from pprint import pprint
-
-file_name = 'wild.txt'
-file = open(file_name, mode='rb')
-file_content = file.read()
-file.close()
-pprint(file_content)
+file_name = 'probe.txt'
+with open(file_name, mode='r', encoding='utf8') as file:
+    for line in file:
+        print(line, end='')
+       
