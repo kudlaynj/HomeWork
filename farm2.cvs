@@ -1,0 +1,5 @@
+farm_list_1 = {'Baralginum': 59, 'Analgin': 33, 'Paracytomol': 24}
+
+farm_list_2 = {'Omeprazole': 27, 'Esomeprazole': 6, 'Omez': 71}
+
+farm_list_3 = {'Folic_acid': 107, 'Askorutin': 63, 'Retinol': 24}
