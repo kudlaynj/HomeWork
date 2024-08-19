@@ -22,7 +22,14 @@ cursor.execute(" CREATE INDEX IF NOT EXISTS idx_email ON Users (email)")
 
 #cursor.execute("UPDATE Users SET balance = ? WHERE id % 2 !=0", (500,))
 
-for i in range(1, 11, 3):
-    cursor.execute("DELETE FROM Users WHERE id = ?", (i,))
+#for i in range(1, 11, 3):
+    #cursor.execute("DELETE FROM Users WHERE id = ?", (i,))
+
+cursor.execute("SELECT username, email, age, balance FROM Users WHERE age < ?", (60,))
+
+users = cursor.fetchall()
+for user in users:
+    print(user)
+
 connection.commit()
 connection.close()
